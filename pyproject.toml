@@ -1,0 +1,23 @@
+[project]
+name = "mlops-labs"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "AlvaroCrespo02", email = "118764704+AlvaroCrespo02@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "click",
+    "black",
+    "pylint",
+    "pytest",
+    "pytest-cov",
+]
+
+[project.scripts]
+mlops-labs = "mlops_labs:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
